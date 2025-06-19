@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Aubrey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fcfcfc;
+  padding: 38px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Aubrey", cursive;
+  font-weight: 400;
+  font-size: 48px;
+  color: #fcfcfc;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.menu-option {
+  color: #fcfcfc;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-option:hover {
+  background-color: #bd00ff;
+}
+
+.search {
+  width: 180px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #302d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.search:hover {
+  background-color: #452c68;
+}
+
+.sign {
+  display: flex;
+  gap: 15px;
+}
+
+.sign-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sign-btn.up {
+  background-color: #bd00ff;
+  color: #fff;
+}
+
+.sign-btn.up:hover {
+  background-color: #9a00cc;
+}
+
+.sign-btn.in {
+  background-color: transparent;
+  border: 2px solid #bd00ff;
+  color: #bd00ff;
+}
+
+.sign-btn.in:hover {
+  background-color: #bd00ff;
+  color: #fff;
+}
+
+.highlights {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 36px;
+  width: 1240px;
+  margin: 0 auto;
+  margin-top: 104px;
+  margin-bottom: 64px;
+}
+
+.body-highlights {
+  margin-top: 14px;
+  display: flex;
+}
+
+.attack-on-titan {
+  position: relative;
+  width: 608px;
+  height: 716px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+}
+.attack-on-titan::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  pointer-events: none;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.second-image {
+  width: 365px;
+  height: 368px;
+  border-radius: 20px;
+  position: relative;
+}
+.second-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  pointer-events: none;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  color: #fcfcfc;
+  width: 100%;
+  padding: 10px 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  border-radius: 20px;
+  z-index: 2;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.second-part-highlight {
+  display: flex;
+  flex-direction: column;
+}
+
+.third {
+  width: 365px;
+  height: 330px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.third::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  pointer-events: none;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.one {
+  width: 223px;
+  height: 243px;
+  border-radius: 20px;
+  position: relative;
+}
+.one::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  pointer-events: none;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.hunter {
+  width: 223px;
+  height: 455px;
+  border-radius: 20px;
+  position: relative;
+}
+.hunter::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  pointer-events: none;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.new-episodes {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 36px;
+  width: 1240px;
+  margin: 0 auto;
+  margin-top: 104px;
+  margin-bottom: 64px;
+}
+.photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.episode-and-desc {
+  position: relative;
+  width: 605px;
+  height: 418px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.episode-and-desc::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2));
+  pointer-events: none;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.episode-title {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  color: #fcfcfc;
+  padding: 6px 10px;
+  border-radius: 6px;
+  z-index: 2;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.episode-and-desc {
+  position: relative;
+  width: 605px;
+  height: 418px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.quality {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 88px;
+  height: 45px;
+  border-radius: 5px;
+  background: #bd00ff;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.subtitle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 173px;
+  height: 45px;
+  border-radius: 5px;
+  background: #bd00ff;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.column {
+  display: flex;
+}
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 72px;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p {
+  font-family: "Aubrey";
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 14px;
+}
